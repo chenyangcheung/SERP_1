@@ -66,9 +66,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     -webkit-appearance: none;
     -webkit-border-radius: 0;
   	}
-  	.headline{
-  		margin-bottom:5px;
-  	}
+  
   	.i-img{
   		display:block;
   	
@@ -136,6 +134,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	.erro{
  		float:right;
  	}
+ 	.titleshow{
+ 	height:60px;
+ 	weight:auto;
+ 	background:#F5F5F5;
+ 	text-align:center;
+ 	 line-height: 60px;
+ 	 margin-top:8px;
+ 	 margin-bottom:5px;
+ 	}
   </style>
    <div class="head"  >
    <span class="bt-s"><input class="search-box" name="search_box" type="text"/></span>
@@ -144,14 +151,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form action="ResultFlower" method="post"> 
  <!-- Item1 -->
   <div name="item1" class="items">
-  <h3 class="headline" >
-  	<span><font size="4">最佳猜测</font></span><!-- "_other_information" -->
-  </h3> 
+  <div class="titleshow">
+  
+  <font size="5" face="微软雅黑">最佳猜测</font>
+
+  </div>
   <div >
   	<div align="center">
   			<img alt="芍药花" id="top_pic1" src="pics/pic101.png" onload="javascript:if (this.width>140) this.width=140;if(this.height>163) this.height=163">
   			<br/><strong><font face="宋体" color="#0098D4" size="5">芍药</font></strong><br/>
-  			<font color="898989" size=3>—— 相似度90% ——</font>
+  			<font color="c2c2c2" size=3>—— 相似度90% ——</font>
   	</div>
   	<div align="center">
   	<img  class="left_empty" class="tiny_img" src="pics/pic102.jpg" onload="javascript:if (this.width>128) this.width=128;if(this.height>400) this.height=400">
@@ -160,41 +169,41 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	</div>
   	<div class="img_info" class="f_info" >
 	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=44940#lemmaHome" target="_blank" class="detail" style="_height:91px">
-	芍药(学名：Paeonia lactifloraPall.), 别名别离草、花中宰相，属五桠果目，芍药科
-  	芍药属芍药组多年生草本。块根由根下方生出，肉质，粗壮，呈纺锤形或长柱形，粗0.6~</a>
+	<font size="4">芍药(学名：Paeonia lactifloraPall.), 别名别离草、花中宰相，属五桠果目，芍药科
+  	芍药属芍药组多年生草本。块根由根下方生出，肉质，粗壮，呈纺锤形或长柱形，粗0.6~</font></a>
   	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=44940#lemmaHome" target="_blank" class="detail" style="_height:91px">
-  	<font color="898989">&nbsp;&nbsp;&nbsp;&nbsp;查看更多></font></a>
-   	<br><font color="898989">搜狗百科</font>
+  	<font color="c2c2c2">&nbsp;&nbsp;&nbsp;&nbsp;查看更多></font></a>
+   	<br><font color="d6d6d6">搜狗百科</font>
   	</div>
    </div> 
   </div>
   <div class="evaluate" name="e1" >
-  <ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate1" type="radio" value="NR-1" id="NR-1" onclick="radioClick1()"/><label for="NR-1">不相关 </label> 
 	<input name="evaluate1" type="radio" value="SR-1" id="SR-1" onclick="radioClick1()"/><label for="SR-1">一般相关 </label> 
 	<input name="evaluate1" type="radio" value="HR-1" id="HR-1"onclick="radioClick1()" /><label for="HR-1">非常相关 </label><br/>
-  	</span></li>
-  </ul>
- <ul class="set1" id="case1" style="display:none">
+  	</span>
+ 
        
-        <li>
-    	<input name="second1" id="picture1" type="checkbox" value="picture1" /><label for="picture1">图片信息 </label>&nbsp;&nbsp;&nbsp;&nbsp; 
-		<input name="second1" id="text1" type="checkbox" value="text1" /><label for="text1">文本信息</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<input name="second1" id="level1" type="checkbox" value="level1" /><label for="level1">二级界面 </label>
-		 	
-        </li>
-  </ul>     
+      <div  class="set1" id="case1" style="display:none">
+    	<input name="second1" id="picture1" type="checkbox" value="picture1" /><label for="picture1">识别准确性 </label>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<input name="second1" id="picture2" type="checkbox" value="picture2" /><label for="picture2">技术质量属性</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input name="second1" id="picture3" type="checkbox" value="picture3" /><label for="picture3">情感激发性</label><br>
+		<input name="second1" id="text1" type="checkbox" value="text1" /><label for="text1">标题相关性</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input name="second1" id="text2" type="checkbox" value="text2" /><label for="text2">摘要相关性 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input name="second1" id="text3" type="checkbox" value="text3" /><label for="text3">来源权威性</label><br/>
+		<input name="second1" id="level1" type="checkbox" value="level1" /><label for="level1">图像或文本原始环境相关性</label>
+	  </div>
   </div>
   <div class="after"></div>
   <!-- Item2 -->
   <div name="item2" class="items">
-  <h3 class="headline" >
   
-  	<font size="4">相关经验<br/></font>	</h3>
-	<p><strong><font size="5">你能分辨芍药和牡丹吗？</font></strong> <br/></p>
-  	<strong>花瓣 <br/></strong>
-  	<p>芍药多在五月中上旬开花，牡丹开花更早，多在四月中下旬开花，一般情况下牡丹花谢之后芍药才开放。</p>
+  <div class="titleshow">
+  	<font size="5" face="微软雅黑">相关经验<br/></font>	
+  	</div>
+	<p><font size="5">你能分辨芍药和牡丹吗？</font> <br/></p>
+  	<p><font size="4">花瓣：芍药多在五月中上旬开花，牡丹开花更早，多在四月中下旬开花，一般情况下牡丹花谢之后芍药才开放。</font></p>
   <div align="left">
   	
   		<a href="http://blog.sina.com.cn/s/blog_4140d48601017xym.html" target="_blank" class="detail" style="_height:91px">
@@ -207,13 +216,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div> 
    </div>
    <div class="evaluate" name="e2">
-<ul class="set1" >
-  <li>相关程度：<span>
+相关程度：<span>
   <input name="evaluate2" type="radio" value="NR-2" id="NR-2" onclick="radioClick2()"/><label for="NR-2">不相关 </label> 
 	<input name="evaluate2" type="radio" value="SR-2" id="SR-2" onclick="radioClick2()"/><label for="SR-2">一般相关 </label> 
 	<input name="evaluate2" type="radio" value="HR-2" id="HR-2"onclick="radioClick2()" /><label for="HR-2">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span><br/>
 
  <ul class="set2" id="case2" style="display:none">
        
@@ -229,8 +236,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <!-- Item3 -->
   <div name="item3" class="items">
-  	<strong>叶子 <br/></strong>
-  	<p>牡丹叶片偏灰绿色，芍药的叶片成亮绿色，另牡丹叶片正面和反面颜色差距较大，正面呈绿色反面呈绿色偏黄色，芍药则皆为绿色，差距较小。</p>
+  	<p><font size="4">叶子:牡丹叶片偏灰绿色，芍药的叶片成亮绿色，另牡丹叶片正面和反面颜色差距较大，正面呈绿色反面呈绿色偏黄色，芍药则皆为绿色，差距较小。</font></p>
   <div align="left">
   	
   		<a href="http://blog.sina.com.cn/s/blog_4140d48601017xym.html" target="_blank" class="detail" style="_height:91px">
@@ -243,44 +249,38 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div> 
     </div>
     <div class="evaluate" name="e3">
-<ul class="set1" >
-  <li>相关程度：<span>
+相关程度：<span>
   <input name="evaluate3" type="radio" value="NR-3" id="NR-3" onclick="radioClick3()"/><label for="NR-3">不相关 </label> 
 	<input name="evaluate3" type="radio" value="SR-3" id="SR-3" onclick="radioClick3()"/><label for="SR-3">一般相关 </label> 
 	<input name="evaluate3" type="radio" value="HR-3" id="HR-3"onclick="radioClick3()" /><label for="HR-3">非常相关 </label><br/>
-  	</span></li>
-  </ul>
-
+  	</span>
  <ul class="set2" id="case3" style="display:none">
  		
         <li>
       	<input name="second3" id="picture3" type="checkbox" value="picture3" /><label for="picture3">图片信息 </label>&nbsp;&nbsp;&nbsp;&nbsp; 
 		<input name="second3" id="text3" type="checkbox" value="text3" /><label for="text3">文本信息</label>&nbsp;&nbsp;&nbsp;&nbsp;
 		<input name="second3" id="level3" type="checkbox" value="level3" /><label for="level3">二级界面 </label>
-        </li>
-       
+        </li>       
   </ul>    
   </div>
 
   	<!-- item4 -->
    <div name="item4" class="items">
-  <h3 class="headline" >
-
-  	<strong><font size="4">他人在搜</font></strong><br/></h3>
+	<div class="titleshow">
+  	<font size="5" face="微软雅黑">他人在搜</font>
+  	</div>
   	<a href="https://www.jianshu.com/p/0c077a8ae9c1" target="_blank" target="_blank" style="_height:91px" >
-  	<strong><font size="4">除了深水养护，想要养好芍药还需要知道这些细节</font></strong></a><br>   
+  	<font size="5">除了深水养护，想要养好芍药还需要知道这些细节</font></a><br>   
   	<a href="https://www.jianshu.com/p/0c077a8ae9c1" target="_blank" class="detail" style="_height:91px">
-  	芍药是珍贵而娇嫩的花材，一般花期只有 2~3 天，但是就是因为这份稍纵即逝的美，才会让人格外珍惜和爱护。所以为了它那三天左右的盛放，我们也要精心养护它···<strong>（来源：简书）</strong>
+  	<font size="4">芍药是珍贵而娇嫩的花材，一般花期只有 2~3 天，但是就是因为这份稍纵即逝的美，才会让人格外珍惜和爱护。所以为了它那三天左右的盛放，我们也要精心养护它···<br/><font size="4"><font size="4" color="d5dad4">简书</font>
   </a>
    </div>
   <div class="evaluate" name="e4" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate4" type="radio" value="NR-4" id="NR-4" onclick="radioClick4()"/><label for="NR-4">不相关 </label> 
 	<input name="evaluate4" type="radio" value="SR-4" id="SR-4" onclick="radioClick4()"/><label for="SR-4">一般相关 </label> 
 	<input name="evaluate4" type="radio" value="HR-4" id="HR-4"onclick="radioClick4()" /><label for="HR-4">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span><br/>
 
  <ul class="set2" id="case4" style="display:none">
         <li>
@@ -294,19 +294,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	<!-- item5 -->
    <div name="item5" class="items">
   	<a href="https://jingyan.baidu.com/article/08b6a591941b5814a8092216.html" target="_blank" target="_blank" style="_height:91px" >
-  	<strong><font size="4">切花芍药怎么养？</font></strong></a><br>
+  	<font size="5">切花芍药怎么养？</font></a><br>
   	<a href="https://jingyan.baidu.com/article/08b6a591941b5814a8092216.html" target="_blank" class="detail" style="_height:91px">
-  	如果你是一名插花爱好者的话，对于鲜花电商一定有所了解，例如：弗洛花园鲜花。鲜花电商发出的芍药往往是1度未开放的···<strong>（来源：百度经验）</strong>
+  	<font size="4">如果你是一名插花爱好者的话，对于鲜花电商一定有所了解，例如：弗洛花园鲜花。鲜花电商发出的芍药往往是1度未开放的···</font><br><font size="4" color="d5dad4">百度经验</font>
   	</a>
   	 </div>
   	<div class="evaluate" name="e5" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate5" type="radio" value="NR-5" id="NR-5" onclick="radioClick5()"/><label for="NR-5">不相关 </label> 
 	<input name="evaluate5" type="radio" value="SR-5" id="SR-5" onclick="radioClick5()"/><label for="SR-5">一般相关 </label> 
 	<input name="evaluate5" type="radio" value="HR-5" id="HR-5"onclick="radioClick5()" /><label for="HR-5">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span><br/>
 
  <ul class="set2" id="case5" style="display:none">
         <li>
@@ -319,19 +317,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 	<!-- item6-->
    <div name="item6" class="items">
   	<a href="http://www.nczfj.com/huahuiyangzhi/201032179.html" target="_blank" target="_blank" style="_height:91px" >
-  	<strong><font size="4">常见的切花花材，让鲜花保鲜的10种简单方法</font></strong></a><br>
+  	<font size="5">常见的切花花材，让鲜花保鲜的10种简单方法</font></a><br>
   	<a href="http://www.nczfj.com/huahuiyangzhi/201032179.html" target="_blank" class="detail" style="_height:91px">
-  	为了能让你的鲜花保持新鲜,你需要每天更换水。并且不要忘记在添加水之前除掉容器中遗留的垃圾残渣，这能降低感染的风险。你还可以在装满水的花瓶里添加一些阿司匹林药片,它能帮助保持水的清洁和减少细菌···<strong>（来源：农村致富经）</strong>
+  	<font size="4">为了能让你的鲜花保持新鲜,你需要每天更换水。并且不要忘记在添加水之前除掉容器中遗留的垃圾残渣，这能降低感染的风险。你还可以在装满水的花瓶里添加一些阿司匹林药片,它能帮助保持水的清洁和减少细菌···</font>
+  	<br>
+  	<font size="4" color="d5dad4">农村致富经</font>
   	</a>
   	</div>
   	 <div class="evaluate" name="e6">
-  <ul class="set1" >
-  <li>相关程度：<span>
+ 相关程度：<span>
   <input name="evaluate6" type="radio" value="NR-6" id="NR-6" onclick="radioClick6()"/><label for="NR-6">不相关 </label> 
 	<input name="evaluate6" type="radio" value="SR-6" id="SR-6" onclick="radioClick6()"/><label for="SR-6">一般相关 </label> 
 	<input name="evaluate6" type="radio" value="HR-6" id="HR-6"onclick="radioClick6()" /><label for="HR-6">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case6" style="display:none">
         <li>
@@ -344,10 +342,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	
   	 <!-- item7 -->
   <div name="item7" class="items">
-  <h3 class="headline" >
+  <div class="titleshow">
   	
-  	<strong><font size="4">相关商品</font></strong>
-  </h3> 
+ <font size="5" face="微软雅黑">相关商品</font>
+  </div>
   <div align="left">
   		<a href="https://m.tb.cn/h.3n0aJ7L?sm=cc586d" target="_blank" class="detail" style="_height:91px">
   			<img class="6_img" src="pics/pic107-1.jpg"  onload="javascript:if (this.width>390) this.width=390;if(this.height>500) this.height=500">
@@ -355,13 +353,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div> 
   </div>
   <div class="evaluate" name="e7" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate7" type="radio" value="NR-7" id="NR-7" onclick="radioClick7()"/><label for="NR-7">不相关 </label> 
 	<input name="evaluate7" type="radio" value="SR-7" id="SR-7" onclick="radioClick7()"/><label for="SR-7">一般相关 </label> 
 	<input name="evaluate7" type="radio" value="HR-7" id="HR-7"onclick="radioClick7()" /><label for="HR-7">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case7" style="display:none">
         
@@ -376,21 +372,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
    <!-- item8 -->
   <div name="item8" class="items">
-  <h3 class="headline" >
-  	<strong><font size="4">相似图片</font></strong>
-  </h3> 
+  <div class="titleshow">
+  	<font size="5" face="微软雅黑">相似图片</font>
+  </div>
   <div>
   		<img  id="top_pic1" src="pics/pic108.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
   </div> 
     </div>
    <div class="evaluate" name="e8" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   	<input name="evaluate8" type="radio" value="NR-8" id="NR-8" onclick="radioClick8()"/><label for="NR-8">不相关 </label> 
 	<input name="evaluate8" type="radio" value="SR-8" id="SR-8" onclick="radioClick8()"/><label for="SR-8">一般相关 </label> 
 	<input name="evaluate8" type="radio" value="HR-8" id="HR-8"onclick="radioClick8()" /><label for="HR-8">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case8" style="display:none">
         
@@ -403,13 +397,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
    <!-- item9 -->
   <div name="item9" class="items">
-  <h3 class="headline" >
-  	<strong><font size="4">识图广告</font></strong>
-  </h3> 
+  <div class="titleshow">
+  	<font size="5" face="微软雅黑">识图广告</font>
+  	</div>
+  	<font size="5">生成美图</font>
   <div class="i-row">
   	<div >
   		<a href="https://graph.baidu.com/view/refinebeautypic?sign=2e58e0ae85b4cd224555901541236547&wd=芍药&id=1&srcp=&tn=wise&idctag=nj&sids=10010_10125_10028_10003_10005_10103_10201_10040_10070_10063_10081_10191_10290_10390_10490_10691_10701_10704_10705_10709_9999&logid=0946774886&entrance=" target="_blank" class="detail" style="_height:91px">
-  			<img  id="top_pic1" src="pics/pic109.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
+  			<img  id="top_pic1" src="pics/pic109-1.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
   		</a>
   	</div>
   </div> 

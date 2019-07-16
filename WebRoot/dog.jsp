@@ -67,9 +67,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     -webkit-appearance: none;
     -webkit-border-radius: 0;
   	}
-  	.headline{
-  		margin-bottom:5px;
-  	}
+  	
   	.i-img{
   		display:block;
   	
@@ -134,6 +132,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	.erro{
  		float:right;
  	}
+ 		.titleshow{
+ 	height:60px;
+ 	weight:auto;
+ 	background:#F5F5F5;
+ 	text-align:center;
+ 	 line-height: 60px;
+ 	 margin-top:8px;
+ 	 margin-bottom:5px;
+ 	}
+ 	.left-empty{
+  	margin-left: 0.2em;
+  	}
   </style>
   
    <div class="head"  >
@@ -143,11 +153,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form action="ResultDog" method="post"> 
  <!-- Item1 -->
   <div name="item1" class="items">
-  <h3 class="headline" >
-  	<a  target="_blank">
-  	<span><font size="4">最佳猜测</font></span><!-- "_other_information" -->
-  	</a>
-  </h3> 
+  <div class="titleshow">
+  	<font size="5" face="">最佳猜测</font>
+  </div>
   <div >
   	<div >
   			<img  id="top_pic1" src="pics/pic201.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
@@ -158,14 +166,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	"detail_information"
   	</p> -->
   	<div name="item1_pics">
-  	<strong>你找的图片可能是：</strong><br/>
+  	<font size="4">你找的图片可能是：</font><br/>
   	
-  	<strong><font face="宋体" color="#0098D4" size="5">贝灵顿梗</font></strong></a>
-  	<div>
+  	<strong><font face="宋体" color="4169e1" size="5">贝灵顿梗</font></strong></a>
+  	<div align="center">
   	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=787224#lemmaHome" target="_blank" class="detail" style="_height:91px">
-  	<img  class="tiny_img" src="pics/pic201-1.jpg" onload="javascript:if (this.width>130) this.width=128;if(this.height>90) this.height=90">
-  	<img  class="tiny_img" src="pics/pic201-2.jpg" onload="javascript:if (this.width>130) this.width=128;if(this.height>90) this.height=90">
-  	<img  class="tiny_img" src="pics/pic201-3.jpg" onload="javascript:if (this.width>130) this.width=128;if(this.height>90) this.height=90">
+  	<img  class="left_empty" class="tiny_img" src="pics/pic201-1.jpg" onload="javascript:if (this.width>130) this.width=128;if(this.height>86) this.height=86">
+  	<img class="left_empty" class="tiny_img" src="pics/pic201-2.jpg" onload="javascript:if (this.width>130) this.width=128;if(this.height>86) this.height=86">
+  	<img class="left_empty" class="tiny_img" src="pics/pic201-3.jpg" onload="javascript:if (this.width>130) this.width=128;if(this.height>86) this.height=86">
   	</div>	
   	</div>
   	</div>
@@ -174,15 +182,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <div class="evaluate" name="e1" >
   <a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=787224#lemmaHome" target="_blank" style="_height:91px">
-  <div class=".img_info" class="f_info" >贝灵顿梗（英文：Bedlington Terriern，学名：Canis lupus familiaris），原产于英国，起源于19世纪。最初由原产地被命名为罗丝贝林梗，与现在的品种相比身体重，脚也短……&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="898989">查看更多></font></div></a>
-	<strong></font>搜狗百科</strong>
-  <ul class="set1" >
-  <li>相关程度：<span>
+  <div class=".img_info" class="f_info" >贝灵顿梗（英文：Bedlington Terriern，学名：Canis lupus familiaris），原产于英国，起源于19世纪。最初由原产地被命名为罗丝贝林梗，与现在的品种相比身体重，脚也短……&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <font color="c2c2c2">查看更多> </font></div></a>
+	<font color="D5DAD4" size="3">搜狗百科</font><br/>
+  相关程度：<span>
   <input name="evaluate1" type="radio" value="NR-1" id="NR-1" onclick="radioClick1()"/><label for="NR-1">不相关 </label> 
 	<input name="evaluate1" type="radio" value="SR-1" id="SR-1" onclick="radioClick1()"/><label for="SR-1">一般相关 </label> 
 	<input name="evaluate1" type="radio" value="HR-1" id="HR-1"onclick="radioClick1()" /><label for="HR-1">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set1" id="case1" style="display:none">
        
@@ -196,34 +203,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="after"></div>
   <!-- item2 -->
    <div name="item2" class="items">
-  <h3 class="headline" >
-
-  	<strong><font size="4">相关咨询</font></strong><br/>
-  	<a href="https://zhidao.baidu.com/question/1368092869515867859.html?entrytime=1541149561655" target="_blank" target="_blank" style="_height:91px" >
-  	<strong><font size="4">贝灵顿为什么没有人养 百度知道</font></strong></a>
   
-  </h3> 
+	<div class="titleshow">
+  	<font size="5" face="微软雅黑">相关咨询</font>
+  	</div>
+  	<a href="https://zhidao.baidu.com/question/1368092869515867859.html?entrytime=1541149561655" target="_blank" target="_blank" style="_height:91px" >
+  	<font size="5"><span style="color:red">贝灵顿</span>为什么没有人养 百度知道</font></a>
+  
   <div class="i-row">
   <a href="https://zhidao.baidu.com/question/1368092869515867859.html?entrytime=1541149561655" target="_blank" class="detail" style="_height:91px">
   	<div class="i-span6">
   			<img class="i-img" src="pics/pict003.png"  onload="javascript:if (this.width>130) this.width=130;if(this.height>130) this.height=130">
   	</div>
   	<div class="i-span18 i-span-last">
-  	<p> 
+  	<font size="4">
   	[最佳答案]贝灵顿有人养，或许只是你没有发现而已……对于喜欢干净的饲养者来说，贝灵顿梗不脱毛是最大优点。
-  	</p>
+  	</font>
   	</div>
  </a>
   </div> 
   </div>
    <div class="evaluate" name="e2">
-<ul class="set1" >
-  <li>相关程度：<span>
+相关程度：<span>
   <input name="evaluate2" type="radio" value="NR-2" id="NR-2" onclick="radioClick2()"/><label for="NR-2">不相关 </label> 
 	<input name="evaluate2" type="radio" value="SR-2" id="SR-2" onclick="radioClick2()"/><label for="SR-2">一般相关 </label> 
 	<input name="evaluate2" type="radio" value="HR-2" id="HR-2"onclick="radioClick2()" /><label for="HR-2">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case2" style="display:none">
         
@@ -239,31 +244,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="after"></div>
   <!-- item3 -->
    <div name="item3" class="items">
-  <h3 class="headline" >
-
-  	<strong><font size="4">他人在搜</font></strong><br/>
+ 
+	<div class="titleshow">
+  	<font size="5" face="微软雅黑">他人在搜</font>
+  	</div>
   	<a href="https://m.ichong123.com/gougou/beilingdungeng" target="_blank" target="_blank" style="_height:91px" >
-  	<strong><font size="4">贝灵顿梗平均价格1000-2000元  爱宠网</font></strong></a>
-  
-  </h3> 
+  	<font size="5"><span style="color:red">贝灵顿</span>梗平均价格1000-2000元  爱宠网</font></a>
  
   	<div class="i-span18 i-span-last">
   	<a href="https://m.ichong123.com/gougou/beilingdungeng" target="_blank" target="_blank" style="_height:91px" >
-  	<p> 
+  	<font size="4">
   贝灵顿梗的体型、毛质、身材大小常被人们与巨型贵宾犬混淆，贝灵顿梗属于大胆、勇敢、敏捷、好斗的品种，它的外形也酷似小绵羊，但性格不像小绵羊。贝灵顿梗犬勇敢，性情稳定，容易训练。是一种文……
-  	</p></a>
+  	</font>
+  	</a>
   	</div>
- </a>
+ 
   </div> 
-  </div>
    <div class="evaluate" name="e3">
-<ul class="set1" >
-  <li>相关程度：<span>
+相关程度：<span>
   <input name="evaluate3" type="radio" value="NR-3" id="NR-3" onclick="radioClick3()"/><label for="NR-3">不相关 </label> 
 	<input name="evaluate3" type="radio" value="SR-3" id="SR-3" onclick="radioClick3()"/><label for="SR-3">一般相关 </label> 
 	<input name="evaluate3" type="radio" value="HR-3" id="HR-3"onclick="radioClick3()" /><label for="HR-3">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case3" style="display:none">
  		 
@@ -277,10 +279,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
    <!-- item4 -->
    <div name="item4" class="items">
- <h3 class="headline" >
-
-  <strong><font size="4">图片来源</font></strong><br/>
- <a href="http://wap.shengpet.com/" target="_blank" class="detail" style="_height:91px">
+ 
+  <div class="titleshow">
+  <font size="5" face="微软雅黑">图片来源</font>
+  </div>
+  <h3 class="headline" >
+  <a href="http://wap.shengpet.com/" target="_blank" class="detail" style="_height:91px">
   </h3> 
   <div class="i-row">
 		 <a href="https://m.baidu.com/tc?from=bd_graph_mm_tc&srd=1&dict=20&src=http%3A%2F%2Ffenlei.iask.sina.com.cn%2Fdetail%2F1094786534.html&sec=1542543181&di=381a8f30cbd9104e&is_baidu=0" target="_blank" class="detail" style="_height:91px">
@@ -289,19 +293,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   			<img class="i-img" src="pics/pic204-4_0.jpg"  onload="javascript:if (this.width>130) this.width=130;if(this.height>130) this.height=130">
   </div>
   	<div class="i-span18 i-span-last">
-  <font size="5">贝灵顿 幼犬 史努比宝宝 签协议 保纯保健康</font>
+  <font size="4">贝灵顿 幼犬 史努比宝宝 签协议 保纯保健康</font>
   	</div>
  </a>
   </div> 
   </div>
    <div class="evaluate" name="e4" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate4" type="radio" value="NR-4" id="NR-4" onclick="radioClick4()"/><label for="NR-4">不相关 </label> 
 	<input name="evaluate4" type="radio" value="SR-4" id="SR-4" onclick="radioClick4()"/><label for="SR-4">一般相关 </label> 
 	<input name="evaluate4" type="radio" value="HR-4" id="HR-4"onclick="radioClick4()" /><label for="HR-4">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span><br/>
 
  <ul class="set2" id="case4" style="display:none">
        
@@ -333,13 +335,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div> 
   </div>
   <div class="evaluate" name="e5" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate5" type="radio" value="NR-5" id="NR-5" onclick="radioClick5()"/><label for="NR-5">不相关 </label> 
 	<input name="evaluate5" type="radio" value="SR-5" id="SR-5" onclick="radioClick5()"/><label for="SR-5">一般相关 </label> 
 	<input name="evaluate5" type="radio" value="HR-5" id="HR-5"onclick="radioClick5()" /><label for="HR-5">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span><br/>
 
  <ul class="set2" id="case5" style="display:none">
     
@@ -370,14 +370,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div> 
   </div>
     <div class="evaluate" name="e6">
-  <ul class="set1" >
-  <li>相关程度：<span>
+ 相关程度：<span>
   <input name="evaluate6" type="radio" value="NR-6" id="NR-6" onclick="radioClick6()"/><label for="NR-6">不相关 </label> 
 	<input name="evaluate6" type="radio" value="SR-6" id="SR-6" onclick="radioClick6()"/><label for="SR-6">一般相关 </label> 
 	<input name="evaluate6" type="radio" value="HR-6" id="HR-6"onclick="radioClick6()" /><label for="HR-6">非常相关 </label><br/>
-  	</span></li>
-  </ul>
-
+  	</span>
  <ul class="set2" id="case6" style="display:none">
       
         <li>
@@ -393,30 +390,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <!-- Item7-->
   <div name="item7" class="items">
-  <h3 class="headline" >
+  
   	
-  	<strong><font size="4">相关商品</font></strong><br/>
+  	<div class="titleshow">
+	
+	<font size="5" face="微软雅黑">相关商品</font>
+	</div>
+  	<h3 class="headline" >
   	<a href="https://uland.taobao.com/semm/tbsearch?refpid=mm_26632258_3504122_32554087&keyword=贝灵顿吃什么狗粮好&clk1=2e6be2e6501f110aa294d67b683d9a08&upsid=2e6be2e6501f110aa294d67b683d9a08" target="_blank" target="_blank" style="_height:91px" >
-  	<strong><font size="4"><span style="color:red">贝灵顿</span> 吃什么狗粮好_超值低价尽在淘宝</font></strong></a>
+  	<font size="5"><span style="color:red">贝灵顿</span> 吃什么狗粮好_超值低价尽在淘宝</font></a>
   	
   </h3> 
   <div class="i-row">
   	<div class="i-span18 i-span-last">
   	<a href="https://uland.taobao.com/semm/tbsearch?refpid=mm_26632258_3504122_32554087&keyword=贝灵顿吃什么狗粮好&clk1=2e6be2e6501f110aa294d67b683d9a08&upsid=2e6be2e6501f110aa294d67b683d9a08" target="_blank" target="_blank" style="_height:91px" >
-	[ 淘宝网 ] &nbsp;&nbsp;&nbsp;<span style="color:red">贝灵顿</span>吃什么狗粮好，百万商家，8亿商品，高人气热淘，淘你满意！
-	<br><font color="#D5DAD4">taobao.com </font><font color="#3FB5D3">&nbsp;&nbsp; V3&nbsp;&nbsp;</font> <font color="#D5DAD4">广告 </font>
+	<font size="4">[ 淘宝网 ] &nbsp;&nbsp;&nbsp;贝灵顿吃什么狗粮好，百万商家，8亿商品，高人气热淘，淘你满意！</font>
+	<br><font size="4" color="#D5DAD4">taobao.com </font><font size="4" color="#3FB5D3">&nbsp;&nbsp; V3&nbsp;&nbsp;</font> <font color="#D5DAD4">广告 </font>
  </a>
   	</div>
   </div> 
   </div>
 <div class="evaluate" name="e7" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate7" type="radio" value="NR-7" id="NR-7" onclick="radioClick7()"/><label for="NR-7">不相关 </label> 
 	<input name="evaluate7" type="radio" value="SR-7" id="SR-7" onclick="radioClick7()"/><label for="SR-7">一般相关 </label> 
 	<input name="evaluate7" type="radio" value="HR-7" id="HR-7"onclick="radioClick7()" /><label for="HR-7">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case7" style="display:none">
         
@@ -428,25 +427,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div>
    <!-- item8 -->
   <div name="item8" class="items">
-  <h3 class="headline" >
-  	<strong><font size="4">相似图片</font></strong>
-  </h3> 
+  	<div class="titleshow">
+  	<font size="5" face="微软雅黑">相似图片</font>
+  </div>
   <div class="i-row">
   	<div >
   		<a href="http://home.chinapet.com/forum.php?mod=viewthread&tid=5008674" target="_blank" class="detail" style="_height:91px">
-  			<img  id="top_pic1" src="pics/pic209.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
+  			<img  id="top_pic1" src="pics/pic209-1.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
   		</a>
   	</div>
-  </div> 
+  </div> 	 
   </div>
   <div class="evaluate" name="e8" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   	<input name="evaluate8" type="radio" value="NR-8" id="NR-8" onclick="radioClick8()"/><label for="NR-8">不相关 </label> 
 	<input name="evaluate8" type="radio" value="SR-8" id="SR-8" onclick="radioClick8()"/><label for="SR-8">一般相关 </label> 
 	<input name="evaluate8" type="radio" value="HR-8" id="HR-8"onclick="radioClick8()" /><label for="HR-8">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case8" style="display:none">
         
@@ -459,19 +456,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="after"></div>
    <!-- item10 -->
   <div name="item10" class="items">
-  <h3 class="headline" >
-  	<strong><font size="4">识图广告</font></strong>
-  </h3> 
+  <div class="titleshow">
+  	<font size="5" face="微软雅黑">识图广告</font>
+  </div>
+  <font size="5">案例：识图可以识别什么？</font>
   <div class="i-row">
   	<div >
   		<a href="https://pic.sogou.com/pic/ris_starList.jsp?keyword=https://img03.sogoucdn.com/app/a/100520146/66925b5cd6ab4e2e18e6be740c405d15&from=ris_star_list" target="_blank" class="detail" style="_height:91px">
-  			<img  id="top_pic1" src="pics/adv-d.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
+  			<img  id="top_pic1" src="pics/adv-d-1.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
   		</a>
   	</div>
   </div> 
   </div>
   <div class="after"></div>
- <br/>
+ <br/>			
    
    <div class="save-bt-s"><input class="save-bt" value="保存" type="submit"/></div>
   <!-- item10-end -->

@@ -64,9 +64,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     -webkit-appearance: none;
     -webkit-border-radius: 0;
   	}
-  	.headline{
-  		margin-bottom:5px;
-  	}
+  	
 /*   	.i-img{
   		display:block;
   		width:110px;
@@ -140,6 +138,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	#top_pic1{
   		margin:0em auto;
   	}
+  	.titleshow{
+ 	height:60px;
+ 	weight:auto;
+ 	background:#F5F5F5;
+ 	text-align:center;
+ 	 line-height: 60px;
+ 	 margin-top:8px;
+ 	 margin-bottom:5px;
+ 	}
   </style>
   <body>
   <div class="head"  >
@@ -149,11 +156,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form action="ResultBook" method="post"> 
  <!-- Item1 -->
   <div name="item1" class="items">
-  <h3 class="headline" >
-  	<a  target="_blank">
-  	<span><font size="4">最佳猜测</font></span><!-- "_other_information" -->
-  	</a>
-  </h3> 
+  <div class="titleshow">
+  <font size="5" face="微软雅黑">最佳猜测</font>
+  </div>
   <div >
   	<div >
   		<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=43386149" target="_blank" class="detail" style="_height:91px">
@@ -166,9 +171,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	"detail_information"
   	</p> -->
   	<div name="item1_pics">
-  	<strong>你找的图片可能是：</strong><br/>
+  	<font size="4">你找的图片可能是：</font><br/>
   	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=43386149" target="_blank" style="_height:91px">
-  	<strong><font face="Times New Roman" color="#0098D4" size="5">polar</font></strong></a>
+  	<strong><font face="Times New Roman" color="4169e1" size="5">polar</font></strong></a>
   	<div>
   	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=43386149" target="_blank" class="detail" style="_height:91px">
   	<img  class="tiny_img" src="pics/pic002.jpg" onload="javascript:if (this.width>130) this.width=126;if(this.height>90) this.height=90">
@@ -183,13 +188,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <div class="evaluate" name="e1" >
   <div class=".img_info">polar['pəulə] adj.极地的, 两极的, 极性的, 南辕北辙的, 南极的, 北极的</div>
-  <ul class="set1" >
-  <li>相关程度：<span>
+  相关程度：<span>
   <input name="evaluate1" type="radio" value="NR-1" id="NR-1" onClick="radioClick1()"/><label for="NR-1">不相关 </label> 
 	<input name="evaluate1" type="radio" value="SR-1" id="SR-1" onClick="radioClick1()"/><label for="SR-1">一般相关 </label> 
 	<input name="evaluate1" type="radio" value="HR-1" id="HR-1"onclick="radioClick1()" /><label for="HR-1">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set1" id="case1" style="display:none">
        
@@ -207,31 +210,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <!-- Item2 -->
   <div name="item2" class="items">
-  <h3 class="headline" >
-  	
-  	<strong><font size="4">相关咨询</font></strong><br/>
+ 
+  	<div class="titleshow"> 
+  	<font size="5" face="微软雅黑">相关咨询</font>
+  	</div>
+  	 
   	<a href="https://m.douban.com/book/subject/4570198/" target="_blank" target="_blank" style="_height:91px" >
-  	<strong>The Last <span style="color:red">Polar</span> Bear</strong> 图书-豆瓣</a>
+  	<font size="5"> Last <span style="color:red">Polar</span> Bear 图书-豆瓣</font></a>
   	
-  </h3> 
   <div class="i-row">
-  	<div class="i-span18 i-span-last">
+  	<div class="i-span18 i-span-last"> 	
   	<a href="https://m.douban.com/book/subject/4570198/" target="_blank" target="_blank" style="_height:91px" >
   	 
-  	<em>Jean Craighead George / Wendell Minor / 32页 / $ 19.20 / 2009-10</em>
-  	The world is warming...Tigluk must save the last <span style="color:red">Polar</span> bear. From master storyteller Jean Craighead George, with art from the critically acclaimed Wendell Minor...
-  	</p></a>
+  	<font size="4" face="Times New Roman"><em>Jean Craighead George / Wendell Minor / 32页 / $ 19.20 / 2009-10</em>
+  	The world is warming...Tigluk must save the last Polar bear. From master storyteller Jean Craighead George, with art from the critically acclaimed Wendell Minor...
+  	</font></a>
   	</div>
   </div> 
   </div>
    <div class="evaluate" name="e2">
-<ul class="set1" >
-  <li>相关程度：<span>
+相关程度：<span>
   <input name="evaluate2" type="radio" value="NR-2" id="NR-2" onClick="radioClick2()"/><label for="NR-2">不相关 </label> 
 	<input name="evaluate2" type="radio" value="SR-2" id="SR-2" onClick="radioClick2()"/><label for="SR-2">一般相关 </label> 
 	<input name="evaluate2" type="radio" value="HR-2" id="HR-2"onclick="radioClick2()" /><label for="HR-2">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span><br/>
 
  <ul class="set2" id="case2" style="display:none">
         <li>
@@ -248,37 +250,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <!-- item3 -->
    <div name="item3" class="items">
-  <h3 class="headline" >
+  
   	
   	<a href="https://www.amazon.cn/gp/aw/d/0140567127" target="_blank" class="detail" style="_height:91px">
-  	<strong>The last <span style="color:red">Polar</span> Bears</strong> 图书-亚马逊
+  	<font size="5">The last <span style="color:red">Polar</span> Bears</strong> 图书-亚马逊</font>
   	</a>
-  </h3> 
   <div class="i-row">
-  	<!-- <div class="i-span6">
-  		<a href="#" target="_blank" class="detail" style="_height:91px">
-  			<img class="i-img" src="#">
-  		</a>
-  	</div> -->
   	<div class="i-span18 i-span-last">
-  	<p> 
   	<a href="https://www.amazon.cn/gp/aw/d/0140567127" target="_blank" class="detail" style="_height:91px">
-  	<em>Harry Horse / Puffin / 32页 / Paperback / GBP 6.99 / 2001-10-04</em>
-  Having seen a depressed <span style="color:red">Polar</span> bear in the zoo, Grandfather and his dog...Harry Horse has written and illustrated several children's books - including...
+  	<font size="4" face="Times New Roman"><em>Harry Horse / Puffin / 32页 / Paperback / GBP 6.99 / 2001-10-04</em>
+  Having seen a depressed Polar bear in the zoo, Grandfather and his dog...Harry Horse has written and illustrated several children's books - including...
+	</font>
 	</a> 	
-  	</p>
+
   	
   	</div>
   </div> 
   </div>
    <div class="evaluate" name="e3">
-<ul class="set1" >
-  <li>相关程度：<span>
+相关程度：<span>
   <input name="evaluate3" type="radio" value="NR-3" id="NR-3" onClick="radioClick3()"/><label for="NR-3">不相关 </label> 
 	<input name="evaluate3" type="radio" value="SR-3" id="SR-3" onClick="radioClick3()"/><label for="SR-3">一般相关 </label> 
 	<input name="evaluate3" type="radio" value="HR-3" id="HR-3"onclick="radioClick3()" /><label for="HR-3">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case3" style="display:none">
         <li>
@@ -292,34 +286,35 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="after"></div>
   <!-- item4 -->
    <div name="item4" class="items">
-  <h3 class="headline" >
-
-  	<strong><font size="4">他人在搜</font></strong><br/>
-  	<a href="http://www.penguin.com" target="_blank" target="_blank" style="_height:91px" >
-  	<strong>Free audio book download sites！</strong></a>
   
-  </h3> 
+
+<div class="titleshow">  	
+<font size="5" face="微软雅黑">他人在搜</font>
+</div>
+  	<a href="http://www.penguin.com" target="_blank" target="_blank" style="_height:91px" >
+  	<font size="5">Free audio book download sites！</font></a>
+  
+  
   <div class="i-row">
   <a href="http://www.penguin.com" target="_blank" class="detail" style="_height:91px">
   	<div class="i-span6">
   			<img class="i-img" src="pics/pic005.jpg"  onload="javascript:if (this.width>130) this.width=130;if(this.height>130) this.height=130">
   	</div>
   	<div class="i-span18 i-span-last">
-  	<p> 
-  	Free audio book download sites！...Spanish textbooks free download The Last Polar Bears（French Edition）by Harry Horse. Read More...
-  	</p>
+  	<font size="4" face="Times New Roman">
+  	Free audio book download sites! ...Spanish textbooks free down- load The Last Polar Bears (Fren- ch Edition) sby Harry Horse. <br>
+  	<font color="d5dad4">Read More...</font>
+  </font>
   	</div>
  </a>
   </div> 
   </div>
    <div class="evaluate" name="e4" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate4" type="radio" value="NR-4" id="NR-4" onClick="radioClick4()"/><label for="NR-4">不相关 </label> 
 	<input name="evaluate4" type="radio" value="SR-4" id="SR-4" onClick="radioClick4()"/><label for="SR-4">一般相关 </label> 
 	<input name="evaluate4" type="radio" value="HR-4" id="HR-4"onclick="radioClick4()" /><label for="HR-4">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case4" style="display:none">
        
@@ -354,10 +349,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="after"></div> -->
   <!-- item6 -->
   <div name="item6" class="items">
-  <h3 class="headline" >
-  	
-  	<strong><font size="4">相关商品</font></strong>
-  </h3> 
+ <div class="titleshow">
+  	<font size="5" face="微软雅黑">相关商品</font>
+  </div>
   <div align="left">
   	
   		<a href="https://item.m.jd.com/product/11578366302.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share&ShareTm=HACH0fx9eZF232%2BLQL73zXuSkja03KBQlrhFsMJGkT0b0UgTHPJxDD42SBob88gl2sKBWxGCbrh4m1p6DM%2B7M3SWCpNtlhcMjaOKKqb42edxrXitvMRgDVcFB2RebioLUSoTFH5VyozSsz903N5LXoF2wBibSIkT91o8rPIVkuU=" target="_blank" class="detail" style="_height:91px">
@@ -370,13 +364,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div> 
   </div>
    <div class="evaluate" name="e6">
-  <ul class="set1" >
-  <li>相关程度：<span>
+ 相关程度：<span>
   <input name="evaluate6" type="radio" value="NR-6" id="NR-6" onClick="radioClick6()"/><label for="NR-6">不相关 </label> 
 	<input name="evaluate6" type="radio" value="SR-6" id="SR-6" onClick="radioClick6()"/><label for="SR-6">一般相关 </label> 
 	<input name="evaluate6" type="radio" value="HR-6" id="HR-6"onclick="radioClick6()" /><label for="HR-6">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case6" style="display:none">
         
@@ -392,9 +384,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="after"></div>
   <!-- item7 -->
   <div name="item7" class="items">
-  <h3 class="headline" >
-  	<strong><font size="4">相似图片</font></strong>
-  </h3> 
+  <div class="titleshow">
+  	<font size="5" face="titleshow">相似图片</font>
+  </div>
   <div>
   		<a href="https://www.amazon.cn/dp/1561454354/ref=sr_1_1?ie=UTF8&qid=1543560426&sr=8-1&keywords=last+gold+diggers" target="_blank" class="detail" style="_height:91px">
   			<img  class="7_img" src="pics/pic007-1.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
@@ -414,13 +406,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div> 
   </div>
    <div class="evaluate" name="e7" >
-	<ul class="set1" >
-  <li>相关程度：<span>
+	相关程度：<span>
   <input name="evaluate7" type="radio" value="NR-7" id="NR-7" onClick="radioClick7()"/><label for="NR-7">不相关 </label> 
 	<input name="evaluate7" type="radio" value="SR-7" id="SR-7" onClick="radioClick7()"/><label for="SR-7">一般相关 </label> 
 	<input name="evaluate7" type="radio" value="HR-7" id="HR-7"onclick="radioClick7()" /><label for="HR-7">非常相关 </label><br/>
-  	</span></li>
-  </ul>
+  	</span>
 
  <ul class="set2" id="case7" style="display:none">
        
@@ -436,13 +426,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="after"></div>
   <!-- item8 -->
   <div name="item8" class="items">
-  <h3 class="headline" >
-  	<strong><font size="4">识图广告</font></strong>
-  </h3> 
+  <div class="titleshow">
+  	<font size="5" face="微软雅黑">识图广告</font>
+  </div>
+  <font size="5">大家都在玩</font>
   <div class="i-row">
   	<div >
   		<a href="https://graph.baidu.com/view/fun?promotion_name=doudika" target="_blank" class="detail" style="_height:91px">
-  			<img  id="top_pic1" src="pics/adv.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
+  			<img  id="top_pic1" src="pics/adv-1.jpg"  onload="javascript:if (this.width>400) this.width=400;if(this.height>400) this.height=400">
   		</a>
   	</div>
   </div> 
