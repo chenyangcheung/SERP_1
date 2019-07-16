@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResultBook</servlet-name>
+    <servlet-class>ResultBook</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NaviResultFlower</servlet-name>
+    <servlet-class>NaviResultFlower</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NaviResultBook</servlet-name>
+    <servlet-class>NaviResultBook</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResultFlower</servlet-name>
+    <servlet-class>ResultFlower</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NaviResultDog</servlet-name>
+    <servlet-class>NaviResultDog</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResultDog</servlet-name>
+    <servlet-class>ResultDog</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResultEnd</servlet-name>
+    <servlet-class>ResultEnd</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ResultBook</servlet-name>
+    <url-pattern>/ResultBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NaviResultFlower</servlet-name>
+    <url-pattern>/NaviResultFlower</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NaviResultBook</servlet-name>
+    <url-pattern>/NaviResultBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResultFlower</servlet-name>
+    <url-pattern>/ResultFlower</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NaviResultDog</servlet-name>
+    <url-pattern>/NaviResultDog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResultDog</servlet-name>
+    <url-pattern>/ResultDog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResultEnd</servlet-name>
+    <url-pattern>/ResultEnd</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>Navi_Flower.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
