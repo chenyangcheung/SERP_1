@@ -389,21 +389,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div>
   <div>
   		<a href="https://www.amazon.cn/dp/1561454354/ref=sr_1_1?ie=UTF8&qid=1543560426&sr=8-1&keywords=last+gold+diggers" target="_blank" class="detail" style="_height:91px">
-  			<img  class="7_img" src="pics/pic007-1.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
+  			<img  class="7_img" src="pics/001.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>160) this.height=163">
   		</a>
   		<a href="https://www.amazon.cn/dp/B002RI9S0G/ref=sr_1_1?ie=UTF8&qid=1543560495&sr=8-1&keywords=the+last+castaways" target="_blank" class="detail" style="_height:91px">
-  			<img class="7_img" src="pics/pic007-2_0.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
+  			<img class="7_img" src="pics/002.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
   		</a>
   		<a href="https://www.amazon.cn/dp/1561454516/ref=sr_1_2?ie=UTF8&qid=1543560527&sr=8-2&keywords=last+cowboys" target="_blank" class="detail" style="_height:91px">
-  			<img class="7_img" src="pics/pic007-3_0.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
+  			<img class="7_img" src="pics/003.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
   		</a>
   		<a href="https://www.amazon.cn/dp/0061240699/ref=sr_1_4?ie=UTF8&qid=1543560599&sr=8-4&keywords=the+last+polar+bear" target="_blank" class="detail" style="_height:91px">
-  			<img class="7_img" src="pics/pic007-4_0.jpg" onload="javascript:if (this.width>75) this.width=72;if(this.height>163) this.height=163">
+  			<img class="7_img" src="pics/004.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
   		</a>
   		<a href="https://www.amazon.cn/dp/1594850593/ref=sr_1_1?ie=UTF8&qid=1543560599&sr=8-1&keywords=the+last+polar+bear" target="_blank" class="detail" style="_height:91px">
-  			<img class="7_img" src="pics/pic007-5_0.jpg" onload="javascript:if (this.width>75) this.width=72;if(this.height>163) this.height=163">
+  			<img class="7_img" src="pics/005.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>163) this.height=163">
   		</a>	
   </div> 
+  <div>
+  		<img  class="7_img" src="pics/001-text.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>80) this.height=80">
+  		<img  class="7_img" src="pics/002-text.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>80) this.height=80">
+  		<img  class="7_img" src="pics/003-text.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>80) this.height=80">
+  		<img  class="7_img" src="pics/004-text.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>80) this.height=80">
+  		<img  class="7_img" src="pics/005-text.jpg" onload="javascript:if (this.width>75) this.width=75;if(this.height>80) this.height=80">
+  </div>
   </div>
    <div class="evaluate" name="e7" >
 	相关程度：<span>
