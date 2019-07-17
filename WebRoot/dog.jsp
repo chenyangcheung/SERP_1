@@ -184,7 +184,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=787224#lemmaHome" target="_blank" style="_height:91px">
   <div class=".img_info" class="f_info" >贝灵顿梗（英文：Bedlington Terriern，学名：Canis lupus familiaris），原产于英国，起源于19世纪。最初由原产地被命名为罗丝贝林梗，与现在的品种相比身体重，脚也短……&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <font color="c2c2c2">查看更多> </font></div></a>
-	<font color="D5DAD4" size="3">搜狗百科</font><br/>
+	<font color="c2c2c2" size="3">搜狗百科</font><br/>
   相关程度：<span>
   <input name="evaluate1" type="radio" value="NR-1" id="NR-1" onclick="radioClick1()"/><label for="NR-1">不相关 </label> 
 	<input name="evaluate1" type="radio" value="SR-1" id="SR-1" onclick="radioClick1()"/><label for="SR-1">一般相关 </label> 
@@ -217,7 +217,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	</div>
   	<div class="i-span18 i-span-last">
   	<font size="4">
-  	[最佳答案]贝灵顿有人养，或许只是你没有发现而已……对于喜欢干净的饲养者来说，贝灵顿梗不脱毛是最大优点。
+  	[最佳答案]<span style="color:red">贝灵顿</span>有人养，或许只是你没有发现而已……对于喜欢干净的饲养者来说，<span style="color:red">贝灵顿梗</span>不脱毛是最大优点。
   	</font>
   	</div>
  </a>
@@ -249,12 +249,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<font size="5" face="微软雅黑">他人在搜</font>
   	</div>
   	<a href="https://m.ichong123.com/gougou/beilingdungeng" target="_blank" target="_blank" style="_height:91px" >
-  	<font size="5"><span style="color:red">贝灵顿</span>梗平均价格1000-2000元  爱宠网</font></a>
+  	<font size="5"><span style="color:red">贝灵顿梗</span>平均价格1000-2000元  爱宠网</font></a>
  
   	<div class="i-span18 i-span-last">
   	<a href="https://m.ichong123.com/gougou/beilingdungeng" target="_blank" target="_blank" style="_height:91px" >
   	<font size="4">
-  贝灵顿梗的体型、毛质、身材大小常被人们与巨型贵宾犬混淆，贝灵顿梗属于大胆、勇敢、敏捷、好斗的品种，它的外形也酷似小绵羊，但性格不像小绵羊。贝灵顿梗犬勇敢，性情稳定，容易训练。是一种文……
+  <span style="color:red">贝灵顿梗</span>的体型、毛质、身材大小常被人们与巨型贵宾犬混淆，<span style="color:red">贝灵顿梗</span>属于大胆、勇敢、敏捷、好斗的品种，它的外形也酷似小绵羊，但性格不像小绵羊。<span style="color:red">贝灵顿梗</span>犬勇敢，性情稳定，容易训练。是一种文……
   	</font>
   	</a>
   	</div>
@@ -293,7 +293,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   			<img class="i-img" src="pics/pic204-4_0.jpg"  onload="javascript:if (this.width>130) this.width=130;if(this.height>130) this.height=130">
   </div>
   	<div class="i-span18 i-span-last">
-  <font size="4">贝灵顿 幼犬 史努比宝宝 签协议 保纯保健康</font>
+  <font size="4"><span style="color:red">贝灵顿</span> 幼犬 史努比宝宝 签协议 保纯保健康</font>
   	</div>
  </a>
   </div> 
@@ -329,7 +329,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   			<img class="i-img" src="pics/pic204-2_0.jpg"  onload="javascript:if (this.width>130) this.width=130;if(this.height>130) this.height=130">
   	</div>
   	<div class="i-span18 i-span-last">
-  <font size="3">3000元 年龄：2个月 品种：贝灵顿梗（母/沙色） 疫苗：2针/荷兰英特威/已驱虫</font>
+  <font size="3">3000元 年龄：2个月 品种：<span style="color:red">贝灵顿梗</span>（母/沙色） 疫苗：2针/荷兰英特威/已驱虫</font>
   	</div>
  </a>
   </div> 
@@ -364,7 +364,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   			<img class="i-img" src="pics/pic204-3.jpg"  onload="javascript:if (this.width>130) this.width=130;if(this.height>130) this.height=130">
 		</div>
   	<div class="i-span18 i-span-last">
-  <font size="3">国内各大贝灵顿专业繁殖犬舍简介，特别提醒下，本贴是专门介绍国内各大专业繁殖小贝的犬舍，如果没有注册犬舍</font>
+  <font size="3">国内各大<span style="color:red">贝灵顿</span>专业繁殖犬舍简介，特别提醒下，本贴是专门介绍国内各大专业繁殖小贝的犬舍，如果没有注册犬舍</font>
   	</div>
  </a>
   </div> 
@@ -404,8 +404,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="i-row">
   	<div class="i-span18 i-span-last">
   	<a href="https://uland.taobao.com/semm/tbsearch?refpid=mm_26632258_3504122_32554087&keyword=贝灵顿吃什么狗粮好&clk1=2e6be2e6501f110aa294d67b683d9a08&upsid=2e6be2e6501f110aa294d67b683d9a08" target="_blank" target="_blank" style="_height:91px" >
-	<font size="4">[ 淘宝网 ] &nbsp;&nbsp;&nbsp;贝灵顿吃什么狗粮好，百万商家，8亿商品，高人气热淘，淘你满意！</font>
-	<br><font size="4" color="#D5DAD4">taobao.com </font><font size="4" color="#3FB5D3">&nbsp;&nbsp; V3&nbsp;&nbsp;</font> <font color="#D5DAD4">广告 </font>
+	<font size="4">[ 淘宝网 ] &nbsp;&nbsp;&nbsp;<span style="color:red">贝灵顿</span>吃什么狗粮好，百万商家，8亿商品，高人气热淘，淘你满意！</font>
+	<br><font size="4" color="c2c2c2">taobao.com </font><font size="4" color="#3FB5D3">&nbsp;&nbsp; V3&nbsp;&nbsp;</font> <font color="c2c2c2">广告 </font>
  </a>
   	</div>
   </div> 

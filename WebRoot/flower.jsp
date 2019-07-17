@@ -172,8 +172,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<font size="4">芍药(学名：Paeonia lactifloraPall.), 别名别离草、花中宰相，属五桠果目，芍药科
   	芍药属芍药组多年生草本。块根由根下方生出，肉质，粗壮，呈纺锤形或长柱形，粗0.6~</font></a>
   	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=44940#lemmaHome" target="_blank" class="detail" style="_height:91px">
-  	<font color="c2c2c2">&nbsp;&nbsp;&nbsp;&nbsp;查看更多></font></a>
-   	<br><font color="d6d6d6">搜狗百科</font>
+  	<font color="c2c2c2" size="4">&nbsp;&nbsp;&nbsp;&nbsp;查看更多></font></a>
+   	<br><font color="c2c2c2" size="4">搜狗百科</font>
   	</div>
    </div> 
   </div>
@@ -190,7 +190,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<input name="second1" id="picture2" type="checkbox" value="picture2" /><label for="picture2">技术质量属性</label>&nbsp;&nbsp;&nbsp;&nbsp;
 		<input name="second1" id="picture3" type="checkbox" value="picture3" /><label for="picture3">情感激发性</label><br>
 		<input name="second1" id="text1" type="checkbox" value="text1" /><label for="text1">标题相关性</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input name="second1" id="text2" type="checkbox" value="text2" /><label for="text2">摘要相关性 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input name="second1" id="text2" type="checkbox" value="text2" /><label for="text2">摘要相关性<span style="color:white">的 </span></label>&nbsp;&nbsp;&nbsp;
 		<input name="second1" id="text3" type="checkbox" value="text3" /><label for="text3">来源权威性</label><br/>
 		<input name="second1" id="level1" type="checkbox" value="level1" /><label for="level1">图像或文本原始环境相关性</label>
 	  </div>
@@ -202,8 +202,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="titleshow">
   	<font size="5" face="微软雅黑">相关经验<br/></font>	
   	</div>
-	<p><font size="5">你能分辨芍药和牡丹吗？</font> <br/></p>
-  	<p><font size="4">花瓣：芍药多在五月中上旬开花，牡丹开花更早，多在四月中下旬开花，一般情况下牡丹花谢之后芍药才开放。</font></p>
+	<p><font size="5">你能分辨<span style="color:red">芍药</span>和牡丹吗？</font> <br/></p>
+  	<p><font size="4">花瓣：<span style="color:red">芍药</span>多在五月中上旬开花，牡丹开花更早，多在四月中下旬开花，一般情况下牡丹花谢之后<span style="color:red">芍药</span>才开放。</font></p>
   <div align="left">
   	
   		<a href="http://blog.sina.com.cn/s/blog_4140d48601017xym.html" target="_blank" class="detail" style="_height:91px">
@@ -236,7 +236,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <!-- Item3 -->
   <div name="item3" class="items">
-  	<p><font size="4">叶子:牡丹叶片偏灰绿色，芍药的叶片成亮绿色，另牡丹叶片正面和反面颜色差距较大，正面呈绿色反面呈绿色偏黄色，芍药则皆为绿色，差距较小。</font></p>
+  	<p><font size="4">叶子:牡丹叶片偏灰绿色，<span style="color:red">芍药</span>的叶片成亮绿色，另牡丹叶片正面和反面颜色差距较大，正面呈绿色反面呈绿色偏黄色，<span style="color:red">芍药</span>则皆为绿色，差距较小。</font></p>
   <div align="left">
   	
   		<a href="http://blog.sina.com.cn/s/blog_4140d48601017xym.html" target="_blank" class="detail" style="_height:91px">
@@ -270,9 +270,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<font size="5" face="微软雅黑">他人在搜</font>
   	</div>
   	<a href="https://www.jianshu.com/p/0c077a8ae9c1" target="_blank" target="_blank" style="_height:91px" >
-  	<font size="5">除了深水养护，想要养好芍药还需要知道这些细节</font></a><br>   
+  	<font size="5">除了深水养护，想要养好<span style="color:red">芍药</span>还需要知道这些细节</font></a><br>   
   	<a href="https://www.jianshu.com/p/0c077a8ae9c1" target="_blank" class="detail" style="_height:91px">
-  	<font size="4">芍药是珍贵而娇嫩的花材，一般花期只有 2~3 天，但是就是因为这份稍纵即逝的美，才会让人格外珍惜和爱护。所以为了它那三天左右的盛放，我们也要精心养护它···<br/><font size="4"><font size="4" color="d5dad4">简书</font>
+  	<font size="4"><span style="color:red">芍药</span>是珍贵而娇嫩的花材，一般花期只有 2~3 天，但是就是因为这份稍纵即逝的美，才会让人格外珍惜和爱护。所以为了它那三天左右的盛放，我们也要精心养护它···<br/><font size="4"><font size="4" color="c2c2c2">简书</font>
   </a>
    </div>
   <div class="evaluate" name="e4" >
@@ -294,9 +294,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	<!-- item5 -->
    <div name="item5" class="items">
   	<a href="https://jingyan.baidu.com/article/08b6a591941b5814a8092216.html" target="_blank" target="_blank" style="_height:91px" >
-  	<font size="5">切花芍药怎么养？</font></a><br>
+  	<font size="5">切花<span style="color:red">芍药</span>怎么养？</font></a><br>
   	<a href="https://jingyan.baidu.com/article/08b6a591941b5814a8092216.html" target="_blank" class="detail" style="_height:91px">
-  	<font size="4">如果你是一名插花爱好者的话，对于鲜花电商一定有所了解，例如：弗洛花园鲜花。鲜花电商发出的芍药往往是1度未开放的···</font><br><font size="4" color="d5dad4">百度经验</font>
+  	<font size="4">如果你是一名插花爱好者的话，对于鲜花电商一定有所了解，例如：弗洛花园鲜花。鲜花电商发出的<span style="color:red">芍药</span>往往是1度未开放的···</font><br><font size="4" color="c2c2c2">百度经验</font>
   	</a>
   	 </div>
   	<div class="evaluate" name="e5" >
@@ -321,7 +321,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<a href="http://www.nczfj.com/huahuiyangzhi/201032179.html" target="_blank" class="detail" style="_height:91px">
   	<font size="4">为了能让你的鲜花保持新鲜,你需要每天更换水。并且不要忘记在添加水之前除掉容器中遗留的垃圾残渣，这能降低感染的风险。你还可以在装满水的花瓶里添加一些阿司匹林药片,它能帮助保持水的清洁和减少细菌···</font>
   	<br>
-  	<font size="4" color="d5dad4">农村致富经</font>
+  	<font size="4" color="c2c2c2">农村致富经</font>
   	</a>
   	</div>
   	 <div class="evaluate" name="e6">

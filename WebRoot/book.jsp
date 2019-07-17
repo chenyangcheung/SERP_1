@@ -147,6 +147,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	 margin-top:8px;
  	 margin-bottom:5px;
  	}
+ 	.left-empty{
+  	margin-left: 0.2em;
+  	}
   </style>
   <body>
   <div class="head"  >
@@ -174,11 +177,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<font size="4">你找的图片可能是：</font><br/>
   	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=43386149" target="_blank" style="_height:91px">
   	<strong><font face="Times New Roman" color="4169e1" size="5">polar</font></strong></a>
-  	<div>
+  	<div align="center">
   	<a href="https://baike.sogou.com/baike/fullLemma.jsp?ch=wap3.shitu&g_ut=3&lid=43386149" target="_blank" class="detail" style="_height:91px">
-  	<img  class="tiny_img" src="pics/pic002.jpg" onload="javascript:if (this.width>130) this.width=126;if(this.height>90) this.height=90">
-  	<img  class="tiny_img" src="pics/pic003.jpg" onload="javascript:if (this.width>130) this.width=126;if(this.height>90) this.height=90">
-  	<img  class="tiny_img" src="pics/pic004.jpg" onload="javascript:if (this.width>130) this.width=126;if(this.height>90) this.height=90">
+  	<img  class="left_empty" class="tiny_img" src="pics/pic002.jpg" onload="javascript:if (this.width>130) this.width=126;if(this.height>90) this.height=90">
+  	<img  class="left_empty" class="tiny_img" src="pics/pic003.jpg" onload="javascript:if (this.width>130) this.width=126;if(this.height>90) this.height=90">
+  	<img  class="left_empty" class="tiny_img" src="pics/pic004.jpg" onload="javascript:if (this.width>130) this.width=126;if(this.height>90) this.height=90">
   	</a>
   	</div>	
   	</div>
@@ -187,7 +190,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div>
   
   <div class="evaluate" name="e1" >
-  <div class=".img_info">polar['pəulə] adj.极地的, 两极的, 极性的, 南辕北辙的, 南极的, 北极的</div>
+  <div class=".img_info">
+  		polar['pəulə] adj.极地的, 两极的, 极性的, 南辕北辙的, 南极的, 北极的&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  		<font color="c2c2c2" size="3">搜狗百科</font>
+  </div>
   相关程度：<span>
   <input name="evaluate1" type="radio" value="NR-1" id="NR-1" onClick="radioClick1()"/><label for="NR-1">不相关 </label> 
 	<input name="evaluate1" type="radio" value="SR-1" id="SR-1" onClick="radioClick1()"/><label for="SR-1">一般相关 </label> 
@@ -223,7 +229,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<a href="https://m.douban.com/book/subject/4570198/" target="_blank" target="_blank" style="_height:91px" >
   	 
   	<font size="4" face="Times New Roman"><em>Jean Craighead George / Wendell Minor / 32页 / $ 19.20 / 2009-10</em>
-  	The world is warming...Tigluk must save the last Polar bear. From master storyteller Jean Craighead George, with art from the critically acclaimed Wendell Minor...
+  	The world is warming...Tigluk must save the last <span style="color:red">Polar</span> bear. From master storyteller Jean Craighead George, with art from the critically ac- claimed Wendell Minor...
   	</font></a>
   	</div>
   </div> 
@@ -259,7 +265,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<div class="i-span18 i-span-last">
   	<a href="https://www.amazon.cn/gp/aw/d/0140567127" target="_blank" class="detail" style="_height:91px">
   	<font size="4" face="Times New Roman"><em>Harry Horse / Puffin / 32页 / Paperback / GBP 6.99 / 2001-10-04</em>
-  Having seen a depressed Polar bear in the zoo, Grandfather and his dog...Harry Horse has written and illustrated several children's books - including...
+  Having seen a depressed <span style="color:red">Polar</span> bear in the zoo, Grandfather and his dog...Harry Horse has written and illustrated several children's books inclu- ding...
 	</font>
 	</a> 	
 
@@ -302,7 +308,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	</div>
   	<div class="i-span18 i-span-last">
   	<font size="4" face="Times New Roman">
-  	Free audio book download sites! ...Spanish textbooks free down- load The Last Polar Bears (Fren- ch Edition) sby Harry Horse. <br>
+  	Free audio book download sites! ...Spanish textbooks free down- load The Last <span style="color:red">Polar</span> Bears (Fren- ch Edition) sby Harry Horse. <br>
   	<font color="d5dad4">Read More...</font>
   </font>
   	</div>
